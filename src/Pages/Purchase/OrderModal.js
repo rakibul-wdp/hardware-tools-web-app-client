@@ -6,7 +6,7 @@ import auth from '../../firebase.init';
 
 const OrderModal = ({ tool }) => {
   const { _id, name, price, minimumOrderQuantity, availableQuantity } = tool;
-  const [user, loading, error] = useAuthState(auth);
+  const [user] = useAuthState(auth);
   const [totalPrice, setTotalPrice] = useState('');
   const { toolId } = useParams();
 
