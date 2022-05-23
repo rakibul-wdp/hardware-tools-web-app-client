@@ -11,7 +11,7 @@ const ToolDetail = () => {
     fetch(url)
       .then((res) => res.json())
       .then((data) => setTool(data));
-  }, []);
+  }, [tool, toolId]);
   return (
     <div className='card lg:card-side bg-base-100 shadow-xl'>
       <figure>
@@ -29,7 +29,7 @@ const ToolDetail = () => {
           </label>
         </div>
       </div>
-      {tool && <OrderModal tool={tool} />}
+      {tool && <OrderModal tool={tool} setTool={setTool} />}
     </div>
   );
 };

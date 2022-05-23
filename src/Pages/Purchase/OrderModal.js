@@ -1,14 +1,60 @@
 import React, { useState } from 'react';
 import { useAuthState } from 'react-firebase-hooks/auth';
+import { useParams } from 'react-router-dom';
+import { toast } from 'react-toastify';
 import auth from '../../firebase.init';
 
 const OrderModal = ({ tool }) => {
-  const { name, price } = tool;
+  const { _id, name, price, minimumOrderQuantity, availableQuantity } = tool;
   const [user, loading, error] = useAuthState(auth);
   const [totalPrice, setTotalPrice] = useState('');
+  const { toolId } = useParams();
 
   const forPrice = (e) => {
     setTotalPrice(e.target.value * price);
+  };
+
+  const handleOrder = (e) => {
+    e.preventDefault();
+    const order = {
+      customerId: _id,
+      toolName: name,
+      customerName: user.displayName,
+      customerEmail: user.email,
+      orderQuantity: e.target.orderQuantity.value,
+      totalPrice: totalPrice,
+      phone: e.target.phone.value,
+      address: e.target.address.value,
+    };
+
+    if (order.orderQuantity >= minimumOrderQuantity && order.orderQuantity <= availableQuantity) {
+      const updateAvailableQuantity = availableQuantity - order.orderQuantity;
+      fetch(`http://localhost:5000/tool/${toolId}`, {
+        method: 'PUT',
+        headers: {
+          'content-type': 'application/json',
+        },
+        body: JSON.stringify({ availableQuantity: updateAvailableQuantity }),
+      })
+        .then((res) => res.json())
+        .then((data) => {
+          toast('Quantity Update successfully');
+        });
+
+      fetch('http://localhost:5000/order', {
+        method: 'POST',
+        headers: {
+          'content-type': 'application/json',
+        },
+        body: JSON.stringify(order),
+      })
+        .then((res) => res.json())
+        .then((data) => {
+          toast('Order Place successfully');
+        });
+    } else {
+      console.log('error');
+    }
   };
   return (
     <div>
@@ -19,7 +65,7 @@ const OrderModal = ({ tool }) => {
             ✕
           </label>
           <h3 className='font-bold text-lg'>Order for: {name}</h3>
-          <form>
+          <form onSubmit={handleOrder}>
             <label className='label'>
               <span className='label-text'>Name</span>
             </label>
