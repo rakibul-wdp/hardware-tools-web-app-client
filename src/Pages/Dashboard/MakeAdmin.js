@@ -17,7 +17,7 @@ const MakeAdmin = () => {
     }).then((res) => res.json())
   );
   if (isLoading) {
-    return <Loading></Loading>;
+    return <Loading />;
   }
 
   const makeAdmin = (email) => {
