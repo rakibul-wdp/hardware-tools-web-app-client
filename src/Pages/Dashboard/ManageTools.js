@@ -1,25 +1,11 @@
-import React from 'react';
+import React, { useState } from 'react';
 import useTools from '../../hooks/useTools';
-import { toast } from 'react-toastify';
+
+import DeleteToolModal from './DeleteToolModal';
 
 const ManageTools = () => {
   const [tools] = useTools();
-
-  const handleDelete = (id) => {
-    fetch(`http://localhost:5000/tool/${id}`, {
-      method: 'DELETE',
-      headers: {
-        authorization: `Bearer ${localStorage.getItem('accessToken')}`,
-      },
-    })
-      .then((res) => res.json())
-      .then((data) => {
-        console.log(data);
-        if (data.deletedCount) {
-          toast.success(`Tool deleted successfully`);
-        }
-      });
-  };
+  const [deleteTool, setDeleteTool] = useState(null);
   return (
     <div>
       <h2>Manage Tools {tools.length}</h2>
@@ -52,15 +38,16 @@ const ManageTools = () => {
                 <td>{tool.minimumOrderQuantity}</td>
                 <td>{tool.price}</td>
                 <td>
-                  <button onClick={() => handleDelete(tool._id)} className='btn btn-sm btn-error'>
+                  <label onClick={() => setDeleteTool(tool)} for='delete-tool-modal' className='btn btn-sm btn-error'>
                     Delete
-                  </button>
+                  </label>
                 </td>
               </tr>
             ))}
           </tbody>
         </table>
       </div>
+      {deleteTool && <DeleteToolModal deleteTool={deleteTool} setDeleteTool={setDeleteTool} />}
     </div>
   );
 };
