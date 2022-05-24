@@ -65,23 +65,22 @@ const CheckoutForm = ({ payment }) => {
       setSuccess('Congrats! Your payment is completed.');
 
       //store payment on database
-      // const payment = {
-      //   appointment: _id,
-      //   transactionId: paymentIntent.id,
-      // };
-      // fetch(`https://secret-dusk-46242.herokuapp.com/booking/${_id}`, {
-      //   method: 'PATCH',
-      //   headers: {
-      //     'content-type': 'application/json',
-      //     authorization: `Bearer ${localStorage.getItem('accessToken')}`,
-      //   },
-      //   body: JSON.stringify(payment),
-      // })
-      //   .then((res) => res.json())
-      //   .then((data) => {
-      //     setProcessing(false);
-      //     console.log(data);
-      //   });
+      const paid = {
+        transactionId: paymentIntent.id,
+      };
+      fetch(`http://localhost:5000/order/${_id}`, {
+        method: 'PATCH',
+        headers: {
+          'content-type': 'application/json',
+          authorization: `Bearer ${localStorage.getItem('accessToken')}`,
+        },
+        body: JSON.stringify(paid),
+      })
+        .then((res) => res.json())
+        .then((data) => {
+          setProcessing(false);
+          console.log(data);
+        });
     }
   };
   return (
@@ -112,7 +111,7 @@ const CheckoutForm = ({ payment }) => {
         <div className='text-green-500'>
           <p>{success} </p>
           <p>
-            Your transaction Id: <span className='text-orange-500 font-bold'>{transactionId}</span>{' '}
+            Transaction Id: <span className='text-orange-500 font-bold'>{transactionId}</span>{' '}
           </p>
         </div>
       )}

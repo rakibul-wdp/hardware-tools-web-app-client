@@ -3,11 +3,13 @@ import React, { useEffect, useState } from 'react';
 import { useAuthState } from 'react-firebase-hooks/auth';
 import { Link, useNavigate } from 'react-router-dom';
 import auth from '../../firebase.init';
+import DeleteOrderModal from './DeleteOrderModal';
 
 const MyOrders = () => {
   const [orders, setOrders] = useState([]);
   const [user, loading, error] = useAuthState(auth);
   const navigate = useNavigate();
+  const [deleteOrder, setDeleteOrder] = useState(null);
 
   useEffect(() => {
     if (user) {
@@ -27,7 +29,7 @@ const MyOrders = () => {
         })
         .then((data) => setOrders(data));
     }
-  }, [user, navigate]);
+  }, [user, navigate, deleteOrder]);
   return (
     <div>
       <h2>My Orders Here: {orders.length}</h2>
@@ -69,12 +71,25 @@ const MyOrders = () => {
                     </div>
                   )}
                 </td>
-                <td>Cancel</td>
+                {o.paid ? (
+                  ''
+                ) : (
+                  <td>
+                    <label
+                      onClick={() => setDeleteOrder(o)}
+                      htmlFor='delete-order-modal'
+                      className='btn btn-sm btn-error'
+                    >
+                      Cancel
+                    </label>
+                  </td>
+                )}
               </tr>
             ))}
           </tbody>
         </table>
       </div>
+      {deleteOrder && <DeleteOrderModal deleteOrder={deleteOrder} setDeleteOrder={setDeleteOrder} />}
     </div>
   );
 };
