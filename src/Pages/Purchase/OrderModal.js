@@ -27,7 +27,7 @@ const OrderModal = ({ tool }) => {
       address: e.target.address.value,
     };
 
-    if (order.orderQuantity >= minimumOrderQuantity && order.orderQuantity <= availableQuantity) {
+    if (order.orderQuantity >= parseInt(minimumOrderQuantity) && order.orderQuantity <= parseInt(availableQuantity)) {
       const updateAvailableQuantity = availableQuantity - order.orderQuantity;
       fetch(`http://localhost:5000/tool/${toolId}`, {
         method: 'PUT',
