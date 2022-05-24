@@ -1,4 +1,4 @@
-import React, { useState } from 'react';
+import React, { useEffect, useState } from 'react';
 import {
   useSendPasswordResetEmail,
   useSignInWithEmailAndPassword,
@@ -31,9 +31,11 @@ const Login = () => {
   const [token] = useToken(googleUser || emailUser || facebookUser || githubUser);
   let from = location.state?.from?.pathname || '/';
   let signInError;
-  if (token) {
-    navigate(from, { replace: true });
-  }
+  useEffect(() => {
+    if (token) {
+      navigate(from, { replace: true });
+    }
+  }, [from, navigate, token]);
   if (googleError || emailError || facebookError || githubError || resetError) {
     signInError = (
       <p className='mb-3 text-red-500'>

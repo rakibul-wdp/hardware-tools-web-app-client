@@ -1,4 +1,4 @@
-import React from 'react';
+import React, { useEffect } from 'react';
 import {
   useCreateUserWithEmailAndPassword,
   useSendEmailVerification,
@@ -42,11 +42,13 @@ const SignUp = () => {
       </p>
     );
   }
+  useEffect(() => {
+    if (token) {
+      navigate('/');
+    }
+  }, [navigate, token]);
   if (googleLoading || createLoading || updating || facebookLoading || githubLoading || verifySending) {
     return <Loading />;
-  }
-  if (token) {
-    navigate('/');
   }
   const onSubmit = async (data) => {
     await createUserWithEmailAndPassword(data.email, data.password);
