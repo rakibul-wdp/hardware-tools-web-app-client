@@ -1,9 +1,11 @@
-import React from 'react';
+import React, { useState } from 'react';
 import { useQuery } from 'react-query';
 import Loading from '../Shared/Loading';
 import { toast } from 'react-toastify';
+import DeleteByAdminOrderModal from './DeleteByAdminOrderModal';
 
 const ManageOrders = () => {
+  const [deleteOrderAdmin, setDeleteOrderAdmin] = useState(null);
   const {
     data: orders,
     isLoading,
@@ -26,6 +28,7 @@ const ManageOrders = () => {
       method: 'PUT',
       headers: {
         'content-type': 'application/json',
+        authorization: `Bearer ${localStorage.getItem('accessToken')}`,
       },
       body: JSON.stringify({ status }),
     })
@@ -70,7 +73,13 @@ const ManageOrders = () => {
                 )}
                 {!order.status && (
                   <td>
-                    <button className='btn btn-sm btn-error'>Cancel</button>
+                    <label
+                      onClick={() => setDeleteOrderAdmin(order)}
+                      for='delete-tool-by-admin-modal'
+                      className='btn btn-sm btn-error'
+                    >
+                      Cancel
+                    </label>
                   </td>
                 )}
               </tr>
@@ -78,6 +87,13 @@ const ManageOrders = () => {
           </tbody>
         </table>
       </div>
+      {deleteOrderAdmin && (
+        <DeleteByAdminOrderModal
+          deleteOrderAdmin={deleteOrderAdmin}
+          setDeleteOrderAdmin={setDeleteOrderAdmin}
+          refetch={refetch}
+        />
+      )}
     </div>
   );
 };
