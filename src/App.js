@@ -1,6 +1,7 @@
 import { Route, Routes } from 'react-router-dom';
 import { ToastContainer } from 'react-toastify';
 import 'react-toastify/dist/ReactToastify.css';
+import Blogs from './Pages/Blogs/Blogs';
 import AddReview from './Pages/Dashboard/AddReview';
 import AddTool from './Pages/Dashboard/AddTool';
 import Dashboard from './Pages/Dashboard/Dashboard';
@@ -78,6 +79,7 @@ function App() {
             }
           />
         </Route>
+        <Route path='blogs' element={<Blogs />} />
         <Route path='login' element={<Login />} />
         <Route path='signup' element={<SignUp />} />
       </Routes>
