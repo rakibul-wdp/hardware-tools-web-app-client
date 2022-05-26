@@ -16,6 +16,7 @@ import Login from './Pages/Login/Login';
 import RequireAdmin from './Pages/Login/RequireAdmin';
 import RequireAuth from './Pages/Login/RequireAuth';
 import SignUp from './Pages/Login/SignUp';
+import Portfolio from './Pages/Portfolio/Portfolio';
 import ToolDetail from './Pages/Purchase/ToolDetail';
 import Footer from './Pages/Shared/Footer';
 import Navbar from './Pages/Shared/Navbar';
@@ -80,6 +81,7 @@ function App() {
           />
         </Route>
         <Route path='blogs' element={<Blogs />} />
+        <Route path='portfolio' element={<Portfolio />} />
         <Route path='login' element={<Login />} />
         <Route path='signup' element={<SignUp />} />
       </Routes>
