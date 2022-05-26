@@ -1,74 +1,92 @@
 [
   {
     "_id": 1,
-    "name": "Deann Cummings",
+    "name": "Power Drill",
     "img": "https://www.dewalt.com/NAG/PRODUCT/IMAGES/HIRES/DCD703F1/DCD703F1_5.jpg?resize=530x530",
-    "description": "Take on a wide range of drilling jobs with the incredible versatility offered by the XTREME™ 12V MAX* Brushless Cordless 5-in-1 Drill/Driver Kit. Designed to improve access in hard-to-reach spaces, this Multi-Head Drill/Driver features 4 dedicated attachment solutions. Drill and fasten in confined spaces with ease using the 1/4 in. hex right angle attachment, while the 1/4 in. hex quick release offset accessory delivers high performance in challenging corner spots. Conveniently load 1/4 in. hex accessory bits using one hand with the 1/4 in. hex quick release add-on, then tackle precision applications like drilling small pilot holes with the 3/8 in. ratcheting chuck attachment.",
-    "price": 299,
-    "minimumOrderQuantity": 100,
-    "availableQuantity": 10000
+    "description": "The DCF885M2 20V MAX* Lithium Ion 1/4 in. Impact Driver Kit is compact and lightweight for fitting in tight spaces and increasing productivity. Three LEDs make it ideal for working in the dark. Belt hook allows user to be mobile. Fits into tight areas with compact (5.55 in. front to back) design Provides visibility without shadows with 3 LEDs with 20-second delay after trigger release",
+    "price": "299",
+    "minimumOrderQuantity": "100",
+    "availableQuantity": "10000"
   },
   {
     "_id": 2,
-    "name": "Kelli Walton",
-    "img": "https://www.dewalt.com/NAG/PRODUCT/IMAGES/HIRES/DCD703F1/DCD703F1_5.jpg?resize=530x530",
-    "description": "Take on a wide range of drilling jobs with the incredible versatility offered by the XTREME™ 12V MAX* Brushless Cordless 5-in-1 Drill/Driver Kit. Designed to improve access in hard-to-reach spaces, this Multi-Head Drill/Driver features 4 dedicated attachment solutions. Drill and fasten in confined spaces with ease using the 1/4 in. hex right angle attachment, while the 1/4 in. hex quick release offset accessory delivers high performance in challenging corner spots. Conveniently load 1/4 in. hex accessory bits using one hand with the 1/4 in. hex quick release add-on, then tackle precision applications like drilling small pilot holes with the 3/8 in. ratcheting chuck attachment.",
-    "price": 299,
-    "minimumOrderQuantity": 100,
-    "availableQuantity": 10000
+    "name": "Hog Ring Anvil",
+    "img": "https://www.dewalt.com/NAG/PRODUCT/IMAGES/HIRES/DCD805D2/DCD805D2_1.jpg?resize=530x530",
+    "description": "When you need the perfect balance of high performance and size to get tough jobs done, use this new 20V MAX* XR® Cordless 1/2 in. Mid-Range Impact Wrench with Hog Ring Anvil. This power tool delivers 600 ft-lbs of max fastening torque and 800 ft-lbs. of max breakaway torque for challenging projects. Designed to help prevent overtightening in forward, and run-off in reverse, the wrench integrates a Precision Wrench™ setting to help optimize user control. Utilize the updated 4-mode push button switch to easily transition speeds when needed. ",
+    "price": "256",
+    "minimumOrderQuantity": "100",
+    "availableQuantity": "10000"
   },
   {
     "_id": 3,
-    "name": "Therese Beard",
-    "img": "https://www.dewalt.com/NAG/PRODUCT/IMAGES/HIRES/DCD703F1/DCD703F1_5.jpg?resize=530x530",
-    "description": "Take on a wide range of drilling jobs with the incredible versatility offered by the XTREME™ 12V MAX* Brushless Cordless 5-in-1 Drill/Driver Kit. Designed to improve access in hard-to-reach spaces, this Multi-Head Drill/Driver features 4 dedicated attachment solutions. Drill and fasten in confined spaces with ease using the 1/4 in. hex right angle attachment, while the 1/4 in. hex quick release offset accessory delivers high performance in challenging corner spots. Conveniently load 1/4 in. hex accessory bits using one hand with the 1/4 in. hex quick release add-on, then tackle precision applications like drilling small pilot holes with the 3/8 in. ratcheting chuck attachment.",
-    "price": 299,
-    "minimumOrderQuantity": 100,
-    "availableQuantity": 10000
+    "name": "Brushless Cordless",
+    "img": "https://www.dewalt.com/NAG/PRODUCT/IMAGES/HIRES/DCD444B/DCD444B_1.jpg?resize=530x530",
+    "description": "Efficiently tackle heavy-duty work using the 20V MAX* Brushless 7/16 in. Compact Quick Change Stud and Joist Drill with FLEXVOLT ADVANTAGE™ Kit. Easily change bits and keep your work pace up with the 7/16 in. hex quick change chuck. To aid in user control, E-Clutch® System shuts the tool down if necessary, in a bind up situation. Get more done throughout the workday without stopping to recharge as you drill up to 495 7/8 in. holes per charge with this high-mobility power tool. ",
+    "price": "399",
+    "minimumOrderQuantity": "100",
+    "availableQuantity": "10000"
   },
   {
     "_id": 4,
     "name": "Harrington Burch",
-    "img": "https://www.dewalt.com/NAG/PRODUCT/IMAGES/HIRES/DCD703F1/DCD703F1_5.jpg?resize=530x530",
-    "description": "Take on a wide range of drilling jobs with the incredible versatility offered by the XTREME™ 12V MAX* Brushless Cordless 5-in-1 Drill/Driver Kit. Designed to improve access in hard-to-reach spaces, this Multi-Head Drill/Driver features 4 dedicated attachment solutions. Drill and fasten in confined spaces with ease using the 1/4 in. hex right angle attachment, while the 1/4 in. hex quick release offset accessory delivers high performance in challenging corner spots. Conveniently load 1/4 in. hex accessory bits using one hand with the 1/4 in. hex quick release add-on, then tackle precision applications like drilling small pilot holes with the 3/8 in. ratcheting chuck attachment.",
-    "price": 299,
-    "minimumOrderQuantity": 100,
-    "availableQuantity": 10000
+    "img": "https://www.dewalt.com/NAG/PRODUCT/IMAGES/HIRES/DW140/DW140_1.jpg?resize=530x530",
+    "description": "The dual-voltage FLEXVOLT® 20V/60V MAX* 9.0 Ah battery automatically changes voltage when you change tools, providing up to 6X runtime** (** With DCB609 FLEXVOLT® battery when used with DEWALT 20V MAX* tools compared to DCB201 1.5 Ah battery pack.) in 20V MAX* tools and the power of corded in 60V MAX* and 120V MAX* tools. Take on tough jobs with this battery because patented technology and large format cells mean it runs cooler*** than the leading competitor 9.0 Ah battery pack under a constant discharge.",
+    "price": "495",
+    "minimumOrderQuantity": "100",
+    "availableQuantity": "10000"
   },
   {
     "_id": 5,
-    "name": "Goldie Wilder",
-    "img": "https://www.dewalt.com/NAG/PRODUCT/IMAGES/HIRES/DCD703F1/DCD703F1_5.jpg?resize=530x530",
-    "description": "Take on a wide range of drilling jobs with the incredible versatility offered by the XTREME™ 12V MAX* Brushless Cordless 5-in-1 Drill/Driver Kit. Designed to improve access in hard-to-reach spaces, this Multi-Head Drill/Driver features 4 dedicated attachment solutions. Drill and fasten in confined spaces with ease using the 1/4 in. hex right angle attachment, while the 1/4 in. hex quick release offset accessory delivers high performance in challenging corner spots. Conveniently load 1/4 in. hex accessory bits using one hand with the 1/4 in. hex quick release add-on, then tackle precision applications like drilling small pilot holes with the 3/8 in. ratcheting chuck attachment.",
-    "price": 299,
-    "minimumOrderQuantity": 100,
-    "availableQuantity": 10000
+    "name": " POWER DETECT",
+    "img": "https://www.dewalt.com/NAG/PRODUCT/IMAGES/HIRES/DCE151B/DCE151B_1.jpg?resize=530x530",
+    "description": "Maximize your performance on the jobsite with the 20V MAX* XR® 1/2 in. Brushless Hammer Drill/Driver with POWER DETECT™ Tool Technology Kit. Developed with innovative POWER DETECT™ Technology, this Hammer Drill/Driver will identify which battery you re powering the tool with and adjust your output accordingly. Access up to  more power** when you pair this tool with a high-capacity XR battery sold separately",
+    "price": "799",
+    "minimumOrderQuantity": "100",
+    "availableQuantity": "10000"
   },
   {
     "_id": 6,
-    "name": "Carroll Shepherd",
-    "img": "https://www.dewalt.com/NAG/PRODUCT/IMAGES/HIRES/DCD703F1/DCD703F1_5.jpg?resize=530x530",
-    "description": "Take on a wide range of drilling jobs with the incredible versatility offered by the XTREME™ 12V MAX* Brushless Cordless 5-in-1 Drill/Driver Kit. Designed to improve access in hard-to-reach spaces, this Multi-Head Drill/Driver features 4 dedicated attachment solutions. Drill and fasten in confined spaces with ease using the 1/4 in. hex right angle attachment, while the 1/4 in. hex quick release offset accessory delivers high performance in challenging corner spots. Conveniently load 1/4 in. hex accessory bits using one hand with the 1/4 in. hex quick release add-on, then tackle precision applications like drilling small pilot holes with the 3/8 in. ratcheting chuck attachment.",
-    "price": 299,
-    "minimumOrderQuantity": 100,
-    "availableQuantity": 10000
+    "name": "Air Compressor",
+    "img": "https://www.dewalt.com/NAG/PRODUCT/IMAGES/HIRES/DXCMH1393075/DXCMH1393075_1.jpg?resize=530x530",
+    "description": "This air compressor is engineered with an overall rugged functionality. This design utilizes a reliable, electric start Honda GX390 OHV gas engine for increased efficiency, optimal power transfer. It is EPA and CARB approved and features an automatic low-oil shutdown function. Manufactured for industrial performance, this 30 gal. 2-stage cast iron industrial air compressor delivers a maximum of 22.0-CFM at 175 PSI, providing enough power to operate more than one air tool or device at a time. The pump is crafted with a patented piston design, a cast iron precision bored cylinder head with a set of patented asymmetrical",
+    "price": "499",
+    "minimumOrderQuantity": "100",
+    "availableQuantity": "10000"
   },
   {
     "_id": 7,
-    "name": "Rae Burris",
-    "img": "https://www.dewalt.com/NAG/PRODUCT/IMAGES/HIRES/DCD703F1/DCD703F1_5.jpg?resize=530x530",
-    "description": "Take on a wide range of drilling jobs with the incredible versatility offered by the XTREME™ 12V MAX* Brushless Cordless 5-in-1 Drill/Driver Kit. Designed to improve access in hard-to-reach spaces, this Multi-Head Drill/Driver features 4 dedicated attachment solutions. Drill and fasten in confined spaces with ease using the 1/4 in. hex right angle attachment, while the 1/4 in. hex quick release offset accessory delivers high performance in challenging corner spots. Conveniently load 1/4 in. hex accessory bits using one hand with the 1/4 in. hex quick release add-on, then tackle precision applications like drilling small pilot holes with the 3/8 in. ratcheting chuck attachment.",
-    "price": 299,
-    "minimumOrderQuantity": 100,
-    "availableQuantity": 10000
+    "name": "Roller Tool Bag",
+    "img": "https://www.dewalt.com/NAG/PRODUCT/IMAGES/HIRES/DCK675D2/DCK675D2_K1.jpg?resize=530x530",
+    "description": "The tool bag has a large, sturdy telescoping handle extends for fast transport of heavy loads and heavy-duty treaded wheels for easy bag movement over rough terrain. The magnetic folding zipper top conveniently attaches to telescoping handle for full access to main compartment. The tool bag has a large interior that holds most large power tools and accessories and 6 Multi-use pockets inside and 11 outside to help organize a wide variety of hand tools as well as padded web carrying handles.",
+    "price": "899",
+    "minimumOrderQuantity": "100",
+    "availableQuantity": "10000"
   },
   {
     "_id": 8,
-    "name": "Tasha Melendez",
-    "img": "https://www.dewalt.com/NAG/PRODUCT/IMAGES/HIRES/DCD703F1/DCD703F1_5.jpg?resize=530x530",
-    "description": "Take on a wide range of drilling jobs with the incredible versatility offered by the XTREME™ 12V MAX* Brushless Cordless 5-in-1 Drill/Driver Kit. Designed to improve access in hard-to-reach spaces, this Multi-Head Drill/Driver features 4 dedicated attachment solutions. Drill and fasten in confined spaces with ease using the 1/4 in. hex right angle attachment, while the 1/4 in. hex quick release offset accessory delivers high performance in challenging corner spots. Conveniently load 1/4 in. hex accessory bits using one hand with the 1/4 in. hex quick release add-on, then tackle precision applications like drilling small pilot holes with the 3/8 in. ratcheting chuck attachment.",
-    "price": 299,
-    "minimumOrderQuantity": 100,
-    "availableQuantity": 10000
+    "name": "Curved Claw",
+    "img": "https://www.dewalt.com/NAG/PRODUCT/IMAGES/HIRES/DCN660B/DCN660B_1.jpg?resize=530x530",
+    "description": "Rely on this multi-use 16 oz. Steel Curve Claw Hammer for general carpentry, finishing, and cabinet-making projects. Built for professionals, its balanced design offers a smooth, controlled swing while the adaptable side nail puller helps you swiftly remove framing nails, finishing nails, and staples. Take advantage of the anti-slip handle that was engineered to enhance your grip no matter the jobsite condition. This hammer also features a magnetic nail start for one-handed nail placement.",
+    "price": "999",
+    "minimumOrderQuantity": "100",
+    "availableQuantity": "10000"
+  },
+  {
+    "_id": 9,
+    "name": "Reversible Drill",
+    "img": "https://www.dewalt.com/NAG/PRODUCT/IMAGES/HIRES/D25980/D25980_2.jpg?resize=530x530",
+    "description": "The 3/8 Reversible Drill features a quick change keyless chuck for easy change over between bits. The 2100 RPMs helps deliver the power to drill through durable materials. Quick-Change Keyless Chuck for easy change over between bits 2100 RPM (Free Speed @90PSI) helps drill through durable materials Variable Speed Trigger allows user to apply needed amount of power One Hand Operation-Forward/Reverse Switch for quick and easy switching",
+    "price": "578",
+    "minimumOrderQuantity": "100",
+    "availableQuantity": "10000"
+  },
+  {
+    "_id": 10,
+    "name": "Multi-Material Blade",
+    "img": "https://www.dewalt.com/NAG/PRODUCT/IMAGES/HIRES/DCCS620P1/DCCS620P1_1.jpg?resize=530x530",
+    "description": "Maintain a consistent cutting depth, unlike a bonded abrasive wheel, with this 3 in. Diamond Multi-Material Blade. Diamond technology† provides high durability in metal-cutting applications for fewer wheel changes compared to bonded cut-off wheels. This blade is recommended for use when cutting multiple types of materials including metal, drywall, fiber cement, plastic, and fiberglass.",
+    "price": "872",
+    "minimumOrderQuantity": "100",
+    "availableQuantity": "10000"
   }
 ]

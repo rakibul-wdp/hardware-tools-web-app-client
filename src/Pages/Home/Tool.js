@@ -19,8 +19,8 @@ const Tool = ({ tool }) => {
           <p className='text-md font-bold text-primary'>Price: ${price}</p>
         </div>
         <div className='flex justify-between items-center'>
-          <p>Minimum Order Quantity: {minimumOrderQuantity}</p>
-          <p>Available Quantity: {availableQuantity}</p>
+          <p className='italic border rounded bg-primary'>Minimum Order Quantity: {minimumOrderQuantity}</p>
+          <p className='italic border rounded bg-primary'>Available Quantity: {availableQuantity}</p>
         </div>
         <p>{description.slice(0, 150)}</p>
         <div className='card-actions justify-end'>
