@@ -33,16 +33,21 @@ const Navbar = () => {
       <li>
         <Link to='/about'>About</Link>
       </li>
+      {user && (
+        <li>
+          <Link to='/about'>{user.displayName}</Link>
+        </li>
+      )}
     </>
   );
   return (
     <div className='bg-primary px-12'>
       <div className='flex justify-between items-center'>
-        <img
-          className='w-28 h-14'
-          src='https://cdn4.vectorstock.com/i/1000x1000/45/38/logo-for-hardware-tools-vector-33274538.jpg'
-          alt=''
-        />
+        <div className='avatar'>
+          <div className='w-20 mask mask-hexagon'>
+            <img src='https://i.ibb.co/Ss56tg3/logo-fav.png' alt='' />
+          </div>
+        </div>
         <h2 className='text-2xl font-bold font-serif'>Hardware Tools</h2>
         {user ? (
           <button className='btn btn-ghost font-bold' onClick={logout}>
@@ -70,13 +75,13 @@ const Navbar = () => {
             </label>
             <ul
               tabIndex='0'
-              className='menu menu-compact dropdown-content mt-3 p-2 shadow bg-base-100 rounded-box w-52 font-bold'
+              className='menu menu-compact dropdown-content mt-3 p-2 shadow bg-base-100 rounded-box w-52 font-bold text-lg'
             >
               {menuItems}
             </ul>
           </div>
         </div>
-        <div className='navbar-center hidden lg:flex font-bold'>
+        <div className='navbar-center hidden lg:flex font-bold text-lg'>
           <ul className='menu menu-horizontal p-0'>{menuItems}</ul>
         </div>
         <div className='navbar-end'>
