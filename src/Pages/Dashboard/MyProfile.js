@@ -53,7 +53,7 @@ const MyProfile = () => {
           <p className='border outline-1 py-2 px-3 bg-gray-200'>{profiles[0]?.linkedin}</p>
         </div>
       </div>
-      <label htmlFor='profile-modal' className='btn btn-primary'>
+      <label htmlFor='profile-modal' className='btn btn-primary w-80 mt-5 ml-56'>
         Update Profile
       </label>
       {<UpdateProfileModal profiles={profiles} refetch={refetch} />}

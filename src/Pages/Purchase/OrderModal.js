@@ -14,6 +14,8 @@ const OrderModal = ({ tool, setTool }) => {
     setTotalPrice(e.target.value * price);
   };
 
+  let error;
+
   const handleOrder = (e) => {
     e.preventDefault();
     const order = {
@@ -54,6 +56,7 @@ const OrderModal = ({ tool, setTool }) => {
         });
     } else {
       console.log('error');
+      return (error = <p>Order is not less than minimumOrderQuantity</p>);
     }
     e.target.reset();
     setTool('');
@@ -98,6 +101,7 @@ const OrderModal = ({ tool, setTool }) => {
               placeholder='Order Quantity'
               className='input w-full max-w-sm mx-auto border-b-2 border-primary border-0'
             />
+            {error}
             <label className='label'>
               <span className='label-text'>Total Price</span>
             </label>

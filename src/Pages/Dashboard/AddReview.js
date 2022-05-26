@@ -23,7 +23,7 @@ const AddReview = () => {
     e.target.reset();
   };
   return (
-    <div className='w-100'>
+    <div className='w-96 mx-auto'>
       <h2>Add a Review</h2>
       <form onSubmit={addReview}>
         <label className='label'>

@@ -66,7 +66,7 @@ const MyOrders = () => {
                         <span className='text-success'>Paid</span>
                       </p>
                       <p>
-                        Transaction id: <span className='text-success'>{o.transactionId}</span>
+                        <p>Transaction id:</p> <span className='text-success'>{o.transactionId}</span>
                       </p>
                     </div>
                   )}

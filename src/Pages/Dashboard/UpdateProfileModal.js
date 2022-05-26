@@ -42,6 +42,7 @@ const UpdateProfileModal = ({ profiles, refetch }) => {
           toast('Profile Update successfully');
         });
     }
+    e.target.reset();
   };
   return (
     <div>

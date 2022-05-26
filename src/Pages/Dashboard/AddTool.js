@@ -49,9 +49,9 @@ const AddTool = () => {
       });
   };
   return (
-    <div>
-      <h2>Add Tool</h2>
-      <form onSubmit={handleSubmit(onSubmit)}>
+    <div className='w-80 mx-auto my-10'>
+      <h2 className='text-center'>Add Tool</h2>
+      <form onSubmit={handleSubmit(onSubmit)} className='w-full'>
         <div className='form-control w-full max-w-xs'>
           <label className='label'>
             <span className='label-text'>Tool Name</span>
@@ -183,7 +183,7 @@ const AddTool = () => {
           </label>
         </div>
 
-        <input className='btn w-full max-w-xs text-white' type='submit' value='Add Tool' />
+        <input className='btn w-full max-w-xs text-white btn-primary' type='submit' value='Add Tool' />
       </form>
     </div>
   );
