@@ -20,6 +20,7 @@ import Portfolio from './Pages/Portfolio/Portfolio';
 import ToolDetail from './Pages/Purchase/ToolDetail';
 import Footer from './Pages/Shared/Footer';
 import Navbar from './Pages/Shared/Navbar';
+import NotFound from './Pages/Shared/NotFound';
 
 function App() {
   return (
@@ -84,6 +85,7 @@ function App() {
         <Route path='portfolio' element={<Portfolio />} />
         <Route path='login' element={<Login />} />
         <Route path='signup' element={<SignUp />} />
+        <Route path='*' element={<NotFound />} />
       </Routes>
       <Footer />
       <ToastContainer />
