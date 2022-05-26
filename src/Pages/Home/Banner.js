@@ -5,7 +5,7 @@ const Banner = () => {
   const navigate = useNavigate();
 
   const navigateToBuy = () => {
-    navigate('/buyTools');
+    navigate('/tools');
   };
   return (
     <div

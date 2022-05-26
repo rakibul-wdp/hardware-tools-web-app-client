@@ -21,6 +21,7 @@ import ToolDetail from './Pages/Purchase/ToolDetail';
 import Footer from './Pages/Shared/Footer';
 import Navbar from './Pages/Shared/Navbar';
 import NotFound from './Pages/Shared/NotFound';
+import ToolsShow from './Pages/ToolsShow/ToolsShow';
 
 function App() {
   return (
@@ -28,6 +29,7 @@ function App() {
       <Navbar />
       <Routes>
         <Route path='/' element={<Home />} />
+        <Route path='/tools' element={<ToolsShow />} />
         <Route
           path='tool/:toolId'
           element={
