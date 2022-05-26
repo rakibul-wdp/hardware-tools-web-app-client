@@ -1,6 +1,7 @@
 import React from 'react';
 import { useQuery } from 'react-query';
 import Loading from '../Shared/Loading';
+import UserReviewRow from './UserReviewRow';
 
 const UserReview = () => {
   const {
@@ -16,8 +17,13 @@ const UserReview = () => {
     return <Loading />;
   }
   return (
-    <div>
-      <h2>Review Here {reviews.length}</h2>
+    <div className='mb-16'>
+      <h2 className='text-3xl font-bold italic pl-5 mb-5'>Customer Review</h2>
+      <div className='grid sm:grid-cols-1 md:grid-cols-2 lg:grid-cols-2 gap-10'>
+        {reviews.slice(0, 4).map((review) => (
+          <UserReviewRow review={review} key={review._id} />
+        ))}
+      </div>
     </div>
   );
 };
