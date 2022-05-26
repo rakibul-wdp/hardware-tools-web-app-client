@@ -31,7 +31,7 @@ const OrderModal = ({ tool, setTool }) => {
 
     if (order.orderQuantity >= parseInt(minimumOrderQuantity) && order.orderQuantity <= parseInt(availableQuantity)) {
       const updateAvailableQuantity = availableQuantity - order.orderQuantity;
-      fetch(`http://localhost:5000/tool/${toolId}`, {
+      fetch(`https://limitless-ocean-18440.herokuapp.com/tool/${toolId}`, {
         method: 'PUT',
         headers: {
           'content-type': 'application/json',
@@ -43,7 +43,7 @@ const OrderModal = ({ tool, setTool }) => {
           toast('Quantity Update successfully');
         });
 
-      fetch('http://localhost:5000/order', {
+      fetch('https://limitless-ocean-18440.herokuapp.com/order', {
         method: 'POST',
         headers: {
           'content-type': 'application/json',

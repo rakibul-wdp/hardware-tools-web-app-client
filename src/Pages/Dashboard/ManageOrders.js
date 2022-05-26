@@ -11,7 +11,7 @@ const ManageOrders = () => {
     isLoading,
     refetch,
   } = useQuery('allOrder', () =>
-    fetch('http://localhost:5000/allOrder', {
+    fetch('https://limitless-ocean-18440.herokuapp.com/allOrder', {
       method: 'GET',
       headers: {
         authorization: `Bearer ${localStorage.getItem('accessToken')}`,
@@ -24,7 +24,7 @@ const ManageOrders = () => {
 
   const statusChange = (id, order) => {
     const status = order.status;
-    fetch(`http://localhost:5000/allOrder/${id}`, {
+    fetch(`https://limitless-ocean-18440.herokuapp.com/allOrder/${id}`, {
       method: 'PUT',
       headers: {
         'content-type': 'application/json',

@@ -9,7 +9,7 @@ const UserReview = () => {
     isLoading,
     refetch,
   } = useQuery('review', () =>
-    fetch('http://localhost:5000/review', {
+    fetch('https://limitless-ocean-18440.herokuapp.com/review', {
       method: 'GET',
     }).then((res) => res.json())
   );

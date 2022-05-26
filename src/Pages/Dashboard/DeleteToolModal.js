@@ -5,7 +5,7 @@ const DeleteToolModal = ({ deleteTool, setDeleteTool }) => {
   const { name, _id } = deleteTool;
 
   const handleDelete = () => {
-    fetch(`http://localhost:5000/tool/${_id}`, {
+    fetch(`https://limitless-ocean-18440.herokuapp.com/tool/${_id}`, {
       method: 'DELETE',
       headers: {
         authorization: `Bearer ${localStorage.getItem('accessToken')}`,

@@ -16,7 +16,7 @@ const UpdateProfileModal = ({ profiles, refetch }) => {
     };
 
     if (profiles[0] === undefined) {
-      fetch(`http://localhost:5000/updateProfile`, {
+      fetch(`https://limitless-ocean-18440.herokuapp.com/updateProfile`, {
         method: 'POST',
         headers: {
           'content-type': 'application/json',
@@ -29,7 +29,7 @@ const UpdateProfileModal = ({ profiles, refetch }) => {
           toast('Profile Update successfully');
         });
     } else {
-      fetch(`http://localhost:5000/updateProfile/${profiles[0]._id}`, {
+      fetch(`https://limitless-ocean-18440.herokuapp.com/updateProfile/${profiles[0]._id}`, {
         method: 'PUT',
         headers: {
           'content-type': 'application/json',

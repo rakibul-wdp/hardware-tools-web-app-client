@@ -8,7 +8,7 @@ const AddReview = () => {
       rating: e.target.rating.value,
       review: e.target.review.value,
     };
-    fetch('http://localhost:5000/review', {
+    fetch('https://limitless-ocean-18440.herokuapp.com/review', {
       method: 'POST',
       headers: {
         'content-type': 'application/json',

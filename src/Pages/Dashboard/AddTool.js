@@ -34,7 +34,7 @@ const AddTool = () => {
             availableQuantity: data.availableQuantity,
           };
           // send to database
-          fetch('http://localhost:5000/tool', {
+          fetch('https://limitless-ocean-18440.herokuapp.com/tool', {
             method: 'POST',
             headers: {
               'content-type': 'application/json',
